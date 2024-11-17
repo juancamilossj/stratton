@@ -468,3 +468,10 @@ footer time {
         display: none; /* Oculta el botón en pantallas grandes */
     }
 }
+
+.modelos_iconicos {
+    color: #d4af37;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
