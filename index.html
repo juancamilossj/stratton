@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Deportivos Japoneses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Oakmont4.png" alt="Stratton Motors Logo" class="logo">
+        </div>
+        <h1>Stratton Motors</h1>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            &#9776; <!-- Este es el símbolo de las tres barras -->
+        </button>
+        <nav class="navbar">
+            <a href="#inicio" class="nav-enlace">Inicio</a>
+            <a href="#historia" class="nav-enlace">Historia</a>
+            <a href="#modelos-iconicos" class="nav-enlace">Modelos Icónicos</a>
+            <a href="#innovacion" class="nav-enlace">Innovación</a>
+            <a href="#curiosidades" class="nav-enlace">Curiosidades</a>
+        </nav>
+    </header>
+
+
+    <section id="inicio">
+        <h1>Autos Deportivos Japoneses</h1>
+        <p>Los autos deportivos japoneses han capturado la atención del mundo por su combinación de ingeniería de vanguardia, diseño audaz y rendimiento excepcional.</p>
+        <p>Entre las marcas más destacadas se encuentran <strong>Nissan</strong>, <strong>Toyota</strong>, <u>Mazda</u>, <i>Honda</i> y <b>Subaru</b>. Estos fabricantes han creado vehículos icónicos que han dejado una huella imborrable en la industria automotriz.</p>
+        <div class="imagen-reservada">
+            <img src="deportivojapones.jpg" alt="Imagen de autos deportivos japoneses" class="imagen-inicio">
+        </div>
+        <a href="https://noticias.autocosmos.com.mx/2019/01/17/los-10-mejores-deportivos-japoneses-de-los-90">
+        <button>Conoce más</button>
+        </a>
+    </section>
+
+    <section id="historia">
+        <h2>Historia</h2>
+        <p>La historia de los autos deportivos japoneses se remonta a las décadas de 1960 y 1970, cuando fabricantes como Nissan, Toyota y Honda comenzaron a desarrollar vehículos que no solo eran funcionales sino también emocionantes de conducir.</p>
+        <blockquote>"Los modelos como el <i>Toyota 2000GT</i> y el <b>Datsun 240Z</b> revolucionaron la industria automotriz, poniendo a Japón en el mapa de los autos deportivos."</blockquote>
+        <p>Los autos deportivos japoneses fueron influenciados por la industria estadounidense y europea, pero desarrollaron un estilo y tecnología propios que les permitieron destacarse.</p>
+        <div class="imagen-reservada">
+            <img src="toyota.jpg" alt="Toyota 2000GT" class="imagen-historia">
+        </div>
+        <ul>
+            <li>1967: Lanzamiento del <strong>Toyota 2000GT</strong></li>
+            <li>1969: Debut del <strong>Nissan Fairlady Z</strong> (Datsun 240Z)</li>
+            <li>1978: Introducción del <strong>Mazda RX-7</strong></li>
+        </ul>
+    </section>
+
+    <section id="modelos-iconicos" class="card-grid">
+        <h2>Modelos Icónicos</h2>
+        <div class="card">
+            <h3>Nissan GT-R</h3>
+            <p>Conocido como el "Godzilla" de los autos deportivos, el GT-R es famoso por su tracción integral y potencia inigualable.</p>
+            <figure>
+                <img src="nissan.jpg" alt="Nissan GT-R en una pista" class="imagen-modelo">
+                <figcaption>Nissan GT-R en una carrera de alta velocidad.</figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <h3>Toyota Supra</h3>
+            <p>El Supra es un símbolo de velocidad y rendimiento, conocido por su motor turboalimentado y su diseño aerodinámico.</p>
+            <figure>
+                <img src="supra.jpg" alt="Toyota Supra" class="imagen-modelo">
+                <figcaption>Toyota Supra en exhibición.</figcaption>
+            </figure>
+        </div>
+        <div class="card">
+            <h3>Mazda MX-5 Miata</h3>
+            <p>Este roadster ligero es famoso por su manejo ágil y su enfoque en la conducción pura.</p>
+            <figure>
+                <img src="mazda.jpg" alt="Mazda MX-5 Miata" class="imagen-modelo">
+                <figcaption>Mazda MX-5 Miata en una carretera escénica.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="innovacion">
+        <h2>Innovación</h2>
+        <p>Los fabricantes japoneses han sido pioneros en la implementación de tecnologías avanzadas en sus autos deportivos, como la inyección electrónica y la tracción integral.</p>
+        <p>La combinación de tecnología y diseño ha permitido que estos vehículos no solo sean rápidos, sino también eficientes y confiables.</p>
+    </section>
+
+    <section id="curiosidades">
+        <h2>Curiosidades</h2>
+        <p>Los autos deportivos japoneses no solo destacan por su rendimiento, sino también por su aparición en la cultura popular.</p>
+        <ul>
+            <li><i>El Nissan Skyline GT-R</i> fue popularizado por la saga de películas <u>"Rápidos y Furiosos"</u>.</li>
+            <li>El <b>Mazda RX-7</b> es conocido por su distintivo motor rotativo.</li>
+            <li>El <strong>Honda NSX</strong> fue desarrollado con la ayuda del legendario piloto <i>Ayrton Senna</i>.</li>
+        </ul>
+        <form>
+            <label for="nombre">Tu nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="comentario">Comentario:</label><br>
+            <input type="text" id="comentario" name="comentario" style="width: 100%;"><br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Stratton Motors. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Selecciona el botón de menú y la barra de navegación
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+// Agrega un evento de clic al botón de menú
+menuToggle.addEventListener('click', function() {
+    // Alterna la visibilidad de la barra de navegación
+    if (navbar.style.display === 'flex') {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'flex';
+    }
+});
+
+// Agrega un evento de clic a cada enlace de la barra de navegación
+const navLinks = document.querySelectorAll('.navbar a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // Solo oculta la barra de navegación en pantallas pequeñas
+        if (window.innerWidth < 768) {
+            navbar.style.display = 'none';
+        }
+    });
+});
+    </script>
+</body>
+</html>

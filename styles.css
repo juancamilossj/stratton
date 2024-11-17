@@ -1,0 +1,470 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f4f4f4;
+    background-color: #0e0e0e;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #d4af37;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+header .logo-container {
+    margin-bottom: 10px;
+}
+
+header .logo {
+    width: 350px;
+    height: auto;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d4af37;
+    color: #111;
+}
+
+/* Secciones principales */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h1, section h2 {
+    color: #d4af37;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modelos-iconicos h2 {
+    text-align: center;
+    color: #d4af37;
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Ajusta el margen según lo necesites */
+}
+
+section p, section ul, section ol, section blockquote {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+section blockquote {
+    font-style: italic;
+    color: #bbb;
+    border-left: 5px solid #d4af37;
+    padding-left: 15px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+section ul, section ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li, section ol li {
+    margin: 10px 0;
+}
+
+/* Imagenes */
+.imagen-reservada img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Cards para los modelos */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card figure {
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card figcaption {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Tabla de innovación */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+table td {
+    background-color: #222;
+}
+
+table tfoot td {
+    font-style: italic;
+    text-align: center;
+    background-color: #333;
+    color: #bbb;
+}
+
+/* Botones */
+button {
+    background-color: #d4af37;
+    color: #111;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #c4a232;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+    text-align: left;
+    width: 50%;
+    margin: 30px auto;
+}
+
+form label {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+form input[type="text"] {
+    font-size: 1rem;
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+    width: 48%;
+    margin-right: 4%;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 2px solid #d4af37;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer time {
+    font-style: italic;
+    color: #bbb;
+}
+/* Estilos para pantallas grandes (desktops y laptops) */
+@media (min-width: 1024px) {
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+}
+
+/* Estilos para tabletas y dispositivos de tamaño medio */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        padding: 8px 16px;
+    }
+}
+
+/* Estilos para móviles y pantallas pequeñas */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
+/* Estilos para la barra de navegación en móviles */
+.navbar {
+    display: none; /* Oculta la barra de navegación por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Color de fondo de la barra */
+    flex-direction: column; /* Para que los enlaces se apilen verticalmente */
+    justify-content: center; /* Centra los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces horizontalmente */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.navbar a {
+    padding: 15px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Estilos para el botón del menú */
+.menu-toggle {
+    display: block; /* Muestra el botón en móviles */
+    background: none;
+    border: none;
+    color: #f4f4f4;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .navbar {
+        display: flex; /* Muestra la barra de navegación en pantallas más grandes */
+        position: static; /* Cambia a posición estática */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+    
+    .menu-toggle {
+        display: none; /* Oculta el botón en pantallas grandes */
+    }
+}
+
+.menu-toggle-active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #333; /* Color de fondo del botón */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle-active:hover {
+    background-color: #444; /* Color de fondo del botón al pasar el mouse */
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #f4f4f4;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.navbar {
+    display: none; /* Asegúrate de que la barra de navegación esté oculta por defecto */
+    position: fixed; /* Para que se mantenga en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Color de fondo de la barra */
+    flex-direction: column; /* Para que los enlaces se apilen verticalmente */
+    justify-content: center; /* Centra los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces horizontalmente */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Estilos generales para la barra de navegación */
+.navbar {
+    display: none; /* Oculta la barra de navegación por defecto en móviles */
+    position: fixed; /* Para que se mantenga en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Color de fondo de la barra */
+    flex-direction: column; /* Para que los enlaces se apilen verticalmente */
+    justify-content: center; /* Centra los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces horizontalmente */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Estilos para pantallas grandes (desktops y laptops) */
+@media (min-width: 768px) {
+    .navbar {
+        display: flex; /* Muestra la barra de navegación en pantallas más grandes */
+        position: static; /* Cambia a posición estática */
+        height: auto; /* Ajusta la altura automáticamente */
+        background-color: transparent; /* Fondo transparente para la navegación en pantallas grandes */
+        flex-direction: row; /* Alinea los enlaces horizontalmente */
+    }
+
+    .menu-toggle {
+        display: none; /* Oculta el botón en pantallas grandes */
+    }
+}
+
+/* Estilos generales para la barra de navegación */
+.navbar {
+    display: none; /* Oculta la barra de navegación por defecto en móviles */
+    position: fixed; /* Para que se mantenga en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Color de fondo de la barra */
+    flex-direction: column; /* Para que los enlaces se apilen verticalmente */
+    justify-content: center; /* Centra los enlaces verticalmente */
+    align-items: center; /* Centra los enlaces horizontalmente */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Estilos para pantallas grandes (desktops y laptops) */
+@media (min-width: 768px) {
+    .navbar {
+        display: flex; /* Muestra la barra de navegación en pantallas más grandes */
+        position: static; /* Cambia a posición estática */
+        height: auto; /* Ajusta la altura automáticamente */
+        background-color: transparent; /* Fondo transparente para la navegación en pantallas grandes */
+        flex-direction: row; /* Alinea los enlaces horizontalmente */
+    }
+
+    .menu-toggle {
+        display: none; /* Oculta el botón en pantallas grandes */
+    }
+}
